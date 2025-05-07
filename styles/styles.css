@@ -1,0 +1,338 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* estilo texto  */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+    color: #fff;
+    background-color: #000;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #18181b;
+}
+/*  configuración imagen y texto logo INACAP  */
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    color: #fff;
+}
+
+.logo-image {
+    height: 50px; 
+    width: auto;
+    margin-right: 10px; 
+}
+/* Configuración imágenes y texto de los botones */
+nav .icon {
+    height: 35px; 
+    width: auto;
+    margin-right: 8px; 
+    vertical-align: middle; 
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+/* Estilo Call To Action*/
+.cta {
+    padding: 10px 20px;
+    background-color: #9147ff; /* Twitch's primary button color */
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.cta:hover {
+    background-color: #772ce8;
+}
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+/* Estilo pie de página */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #18181b;
+}
+/* Bloque configuración imágenes */
+.hero-image {
+    width: 100%;
+    height: auto;
+    display: block; 
+    margin-bottom: 20px;
+}
+.games-image,
+.events-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 20px; 
+}
+.activities {
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 40px;
+    margin-top: -100px; 
+    border-radius: 8px;
+    position: relative;
+    z-index: 2;
+    max-width: 800px; 
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+}
+/* Bloque configuración texto */
+.activities h2 {
+    font-size: 2.5em; 
+    margin-bottom: 20px;
+    text-align: center; 
+}
+
+.activities p {
+    font-size: 1.2em; 
+    line-height: 1.6; 
+    margin-bottom: 20px; 
+    text-align: justify; 
+}
+.testimonials {
+    text-align: center;
+    padding: 40px;
+    background: #f8f8f8; 
+}
+/* Estilos de los botones*/
+.testimonial {
+    margin-bottom: 30px;
+    display: inline-block;
+    width: 300px; 
+    padding: 20px;
+    background: #fff; 
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+/* Configuración imágenes de los testimonios */
+.testimonial-image {
+    width: 80px; 
+    height: 80px;
+    object-fit: cover; 
+    border-radius: 50%; 
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+blockquote {
+    font-style: italic;
+    color: #555;
+}
+cite {
+    display: block;
+    font-style: normal;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.testimonials {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espacio entre las cajas de testimonios */
+    padding: 40px 0;
+}
+/* Configuración cajitas de testimonios */
+.testimonial {
+    flex: 0 0 300px; 
+    height: 350px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    background: #fff; 
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    overflow: hidden; /* Evita que el contenido se desborde de la caja */
+}
+.testimonial-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+/* Configuración calificación testimonios */
+.testimonial-rating {
+    display: flex;
+    justify-content: center; 
+    margin-bottom: 10px; 
+}
+.rating-star {
+    width: 20px; 
+    height: auto;
+    margin-right: 4px; 
+}
+.testimonial blockquote {
+    font-style: italic;
+    color: #555;
+    height: 100px; 
+    overflow-y: auto;
+    text-align: center;
+    margin: 0 10px; 
+}
+.testimonial cite {
+    font-style: normal;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+}
+.games-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+/* Configuración para la sección de Nuestras actividades */
+.activities {
+    background: rgba(255, 255, 255, 0.8); 
+    color: black; 
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    margin: 20px auto; 
+    max-width: 800px; 
+}
+.activities h2 {
+    font-size: 2.5em; 
+    margin-bottom: 20px;
+    text-align: center;
+}
+.activities p {
+    font-size: 1.2em; 
+    line-height: 1.6; 
+    margin-bottom: 20px;
+    text-align: justify;
+}
+/* Configuración texto de la sección del CTA */
+.cta-section {
+    text-align: center;
+    padding: 50px 20px;
+    background: #9147ff; 
+    color: #fff;
+}
+.cta-section h2 {
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+}
+.cta-section p {
+    margin-bottom: 30px;
+    font-size: 1.4rem;
+}
+.cta-section form {
+    max-width: 500px;
+    margin: auto;
+}
+.cta-section input[type="email"] {
+    padding: 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 4px;
+    width: calc(100% - 120px); 
+}
+.cta-section .cta {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #000;
+    background: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.cta-section .cta:hover {
+    background: #e2e2e2; 
+}
+/* Formulario */
+.registration-form {
+    background-color: #9147ff; 
+    color: #fff; 
+    padding: 40px;
+    text-align: center;
+}
+.registration-form h2 {
+    margin-bottom: 20px;
+}
+.registration-form p {
+    margin-bottom: 30px;
+}
+.registration-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; 
+}
+.registration-form input[type="text"],
+.registration-form input[type="email"],
+.registration-form select {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 80%; 
+    max-width: 400px; 
+}
+.registration-form .form-cta {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff; /* Fondo del botón */
+    color: #000; /* Color del texto del botón */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.registration-form .form-cta:hover {
+    background-color: #e2e2e2; 
+}
+
+/* PLUS: estilos para los dispositivos móviles también */
+@media (max-width: 768px) {
+    .registration-form form {
+        width: 90%;
+    }
+}
+
+.product-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Estilo Call To Action*/
+.cta {
+    padding: 10px 20px;
+    background-color: #9147ff; /* Twitch's primary button color */
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.cta:hover {
+    background-color: #772ce8;
+}
